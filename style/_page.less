@@ -1,0 +1,34 @@
+.card {
+    margin: 60px auto 0 auto;
+    width: 600px;
+    padding: 20px;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    font-family: @main-font;
+
+    h1 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .checkboxes-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .checkboxes-wrapper {
+        margin-top: 20px;
+
+        h2 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .custom-checkbox {
+            &:not(:first-child) {
+                margin-top: 12px;
+            }
+        }
+    }
+}
